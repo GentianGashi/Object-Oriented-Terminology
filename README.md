@@ -46,7 +46,7 @@ Advantages to using **Inheritance**:
 * Reduces complexity and gives you a more organised design approach to classes
 
 # References
-https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/
-https://www.d.umn.edu/~gshute/softeng/object-oriented.html
-https://www.unf.edu/~broggio/cop3540/OOPTerms.htm
-https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/
+* [FreeCodeCamp](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
+* [University of Minnesota Deluth](https://www.d.umn.edu/~gshute/softeng/object-oriented.html)
+* https://www.unf.edu/~broggio/cop3540/OOPTerms.htm
+* https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/
