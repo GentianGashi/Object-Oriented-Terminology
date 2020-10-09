@@ -25,3 +25,10 @@ Inheritance is where you define a new class / object and have it inherit charact
 Advantages to using **Inheritance**:
 * Allows you to re-use already written code, rather than having to re-write objects
 * Gives you a more organised design approach to classes and object-orientation
+
+## Aggregation
+Aggregation is where you have objects that are made up of other objects
+
+Advantages to using **Aggretation**:
+* Composition: allows you to reuse code for e.g. A Car is composed of Wheels, a Chassis and an Engine
+* Collection: allows your object to contain other objects for e.g. a List contains several Items; A Set several Members.
