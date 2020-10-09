@@ -43,7 +43,7 @@ The child class reuses all fields and methods of the parent class (common part) 
 
 Advantages to using **Inheritance**:
 * Allows you to reuse code that share common logic between classes
-* Reduces complexity and gives you a more organised design approach to classes
+* Reduces complexity and increasing readibility, giving you a more organised design approach to OOP
 
 # References
 * [FreeCodeCamp](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
