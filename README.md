@@ -33,7 +33,7 @@ Any time a collection (such as a list) or a method expects an instance of the pa
 
 Advantages to using **Polymorphism**:
 * Allows overloading: (allowing two methods to have the same name but different parameters types)
-* Allows the use of words and names to mean different different things in different contexts
+* Allows the use of words and names to mean different things in different contexts
 
 ## Inheritance
 Objects are often very similar. They share common logic. But they’re not entirely the same.
