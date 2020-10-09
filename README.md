@@ -2,11 +2,13 @@
 
 ## Encapsulation
 Encapsulation is where you ensure sensitive data is hidden from the user by declaring class variables as private and creating public get&set methods that can access / update the private variables without security concerns.
+
 Advantages to using encapsulation:
 * Sensitive data is hidden from users
 * Data can still be accessed / updated without interfering with the variables directly
 ## Abstraction
 Abstraction allows you to show only the esseential attributes and hide unecessary information. The main purpose of abstraction is hiding unecessary details from users. 
+
 Advantages to using abstraction:
 * The main benefit of using an abstract class is that it allows you to group several related classes as siblings.
 * Abstraction helps to reduce the complexity of the design and implementation process of software.
