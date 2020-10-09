@@ -1,34 +1,52 @@
 # Object-Oriented-Terminology
 
 ## Encapsulation
-Encapsulation is where you ensure sensitive data is hidden from the user by declaring class variables as private and creating public get&set methods that can access / update the private variables without security concerns.
+Say we have a program. It has a few logically different objects which communicate with each other — according to the rules defined in the program.
+Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.
+So, the object manages its own state via methods — and no other class can touch it unless explicitly allowed. If you want to communicate with the object, you should use the methods provided. But (by default), you can’t change the state.
 
 Advantages to using **Encapsulation**:
 * Sensitive data is hidden from users
-* Data can still be accessed / updated without interfering with the variables directly
+* Data can still be accessed / updated using a middleman (public methods) without interfering with the variables directly
+
 ## Abstraction
-Abstraction allows you to show only the esseential attributes and hide unecessary information. The main purpose of abstraction is hiding unecessary details from users. 
+Abstraction can be thought of as a natural extension of encapsulation.
+In object-oriented design, programs are often extremely large. And separate objects communicate with each other a lot. So maintaining a large codebase like this for years — with changes along the way — is difficult.
+Abstraction is a concept aiming to ease this problem.
+Applying abstraction means that each object should only expose a high-level mechanism for using it.
+This mechanism should hide internal implementation details. It should only reveal operations relevant for the other objects.
+Think — a coffee machine. It does a lot of stuff and makes quirky noises under the hood. But all you have to do is put in coffee and press a button.
+Preferably, this mechanism should be easy to use and should rarely change over time. Think of it as a small set of public methods which any other class can call without “knowing” how they work.
 
 Advantages to using **Abstraction**:
 * The main benefit of using an abstract class is that it allows you to group several related classes as siblings.
 * Abstraction helps to reduce the complexity of the design and implementation process of software.
+
 ## Polymorphism
-Polymorphism refers to having methods with the same name and parameter types exhibit different behaviour depending on the receiver, allowing you to send the same message to two different objects and have them respond in different ways.
+Polymorphism means “many shapes” in Greek.
+
+Say we have a parent class and a few child classes which inherit from it. Sometimes we want to use a collection — for example a list — which contains a mix of all these classes. Or we have a method implemented for the parent class — but we’d like to use it for the children, too.
+This can be solved by using polymorphism.
+Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are.
+This typically happens by defining a (parent) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods.
+Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.
 
 Advantages to using **Polymorphism**:
-* Allows overloading (allowing two methods to have the same name but different parameters types)
+* Allows overloading: (allowing two methods to have the same name but different parameters types)
 * Allows the use of words and names to mean different different things in different contexts
 
 ## Inheritance
-Inheritance is where you define a new class / object and have it inherit characteristics from a parent class avoiding code being rewritten. An example of this would be, Having a parent class called 'Vehicle' and a child class called 'Car' or 'Truck', inheriting characteristics such as fuel type etc. Multiple Inheritance allows the parent class to have as many child classes as you'd need.
+Objects are often very similar. They share common logic. But they’re not entirely the same.
+So how do we reuse the common logic and extract the unique logic into a separate class? One way to achieve this is inheritance.
+It means that you create a (child) class by deriving from another (parent) class. This way, we form a hierarchy.
+The child class reuses all fields and methods of the parent class (common part) and can implement its own (unique part).
 
 Advantages to using **Inheritance**:
-* Allows you to re-use already written code, rather than having to re-write objects
-* Gives you a more organised design approach to classes and object-orientation
+* Allows you to reuse code that share common logic between classes
+* Reduces complexity and gives you a more organised design approach to classes
 
-## Aggregation
-Aggregation is where you have objects that are made up of other objects
-
-Advantages to using **Aggretation**:
-* Composition: allows you to reuse code for e.g. A Car is composed of Wheels, a Chassis and an Engine
-* Collection: allows your object to contain other objects for e.g. a List contains several Items; A Set several Members.
+# References
+https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/
+https://www.d.umn.edu/~gshute/softeng/object-oriented.html
+https://www.unf.edu/~broggio/cop3540/OOPTerms.htm
+https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/
