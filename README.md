@@ -48,5 +48,5 @@ Advantages to using **Inheritance**:
 # References
 * [FreeCodeCamp](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
 * [University of Minnesota Deluth](https://www.d.umn.edu/~gshute/softeng/object-oriented.html)
-* https://www.unf.edu/~broggio/cop3540/OOPTerms.htm
-* https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/
+* [University of North Florida](https://www.unf.edu/~broggio/cop3540/OOPTerms.htm)
+* [Deborah's Developer MindScape](https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/)
